@@ -1,22 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_div_mod.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 15:20:44 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/10/22 15:37:31 by guilhermeur      ###   ########.fr       */
+/*   Created: 2024/10/22 16:47:31 by guilhermeur       #+#    #+#             */
+/*   Updated: 2024/10/22 16:49:04 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-void ft_print_alphabet(void)
+void ft_div_mod(int a, int b, int *div, int *mod)
 {
-    write(1, "abcdefghijklmnopqrstuvwxyz\n", 27);
+    *div = 
 }
-/*int main()
-{
-    ft_print_alphabet();
-    return 0;
-}*/

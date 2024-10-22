@@ -1,22 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_is_negative.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 15:20:44 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/10/22 15:37:31 by guilhermeur      ###   ########.fr       */
+/*   Created: 2024/10/22 15:39:40 by guilhermeur       #+#    #+#             */
+/*   Updated: 2024/10/22 16:06:35 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-void ft_print_alphabet(void)
+
+void ft_putchar(char c)
 {
-    write(1, "abcdefghijklmnopqrstuvwxyz\n", 27);
+    write(1, &c, 1);
 }
-/*int main()
+void ft_is_negative(int n)
 {
-    ft_print_alphabet();
-    return 0;
-}*/
+    if (n < 0)
+    {
+        ft_putchar('N'); 
+    }
+    else
+        ft_putchar('P');
+}
+int main()
+{
+    ft_is_negative(0);
+    return (0);
+}
